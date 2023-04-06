@@ -1,0 +1,21 @@
+{% extends "core/index.html" %}
+{% load static %}
+{% block title %} Cumpleaños guardados {% endblock %}
+{% block extra_styles %}
+<link rel="stylesheet" href="{% static 'core/css/cumple_guardado.css' %} "> {% endblock %}
+{% block content %}
+<p>Aquí encontraras las fechas de cumpleaños que has guardado</p>
+<div class="contenedor">
+    {%if cumpleañeros %}
+    {% for cumpleañero in cumpleañeros %}
+    <div class="cumpleañero">
+        <p class="alumno">Nombre: {{cumpleañero.nombre}}</p>
+        <p class="alumno">Apellido: {{cumpleañero.apellido}}</p>
+        <p class="alumno">Cumpleaños: {{cumpleañero.fecha}}</p>
+    </div>
+    {% endfor %}
+    {% else %}
+       <p class="cumpleañero">No se encuentran cumpleañeros guardados.</p>
+    {% endif %}
+</div>
+{% endblock %}

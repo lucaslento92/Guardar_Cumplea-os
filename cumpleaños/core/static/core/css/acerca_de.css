@@ -1,0 +1,57 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-color: lightseagreen;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content:space-around;
+}
+
+a {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    border: red solid 2px;
+}
+
+p {
+    font-size: 40px;
+    text-align: justify;
+}
+
+.contenedor {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor img {
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-top: 123px;
+    width: 100%;
+    bottom: 0;
+}

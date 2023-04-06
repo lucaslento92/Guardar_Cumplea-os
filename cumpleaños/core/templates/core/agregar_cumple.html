@@ -1,0 +1,15 @@
+{% extends "core/index.html" %}
+{% load static %}
+{% block title %} Agregar cumpleaños {% endblock %}
+{% block extra_styles %} <link rel="stylesheet" href="{% static 'core/css/agregar_cumple.css' %} "> {% endblock %}
+{% block content %}
+<p>Aquí podras cargar las fechas de cumpleaños</p>
+<form class="form" method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<div class="boton">
+    <input type="submit" value="Agregar cumpleaños">
+</div>
+</form>
+
+{% endblock %}

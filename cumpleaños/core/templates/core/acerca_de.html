@@ -1,0 +1,24 @@
+{% extends "core/index.html" %}
+{% load static %}
+{% block title %} Acerca de {% endblock %}
+{% block extra_styles %}
+<link rel="stylesheet" href="{% static 'core/css/acerca_de.css' %} "> {% endblock %}
+{% block content %}
+<p>
+    Este proyecto Django es realizado para el curso de Full Stack Python, comision 22528 correspondiente a la Agencia de
+    Aprendizaje Codo a Codo 4.0. Es un trabajo con herramientas de front-end y back-end desarrollado por el alumno Lucas
+    Lento. <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid culpa ea dicta debitis dolor voluptate placeat
+    et sit excepturi dignissimos, similique cum cumque delectus esse sunt nemo quo maxime. Alias.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quae quod illo quam architecto dolorem
+    accusantium soluta officiis? Quis accusantium nesciunt voluptatibus necessitatibus? Deleniti possimus dolorem
+    doloremque consectetur quo. Et?
+</p>
+<div class="contenedor">
+    <img src='{% static "core/img/empleado_1.jpg" %}' alt="Carlos Lopez">
+    <img src='{% static "core/img/empleado_2.jpg" %}' alt="Maria Del Cerro">
+    <img src='{% static "core/img/empleado_3.jpg" %}' alt="Daniela Perez">
+    <img src='{% static "core/img/empleado_4.jpg" %}' alt="Juan Dominguez">
+    <img src='{% static "core/img/empleado_5.jpg" %}' alt="Martina Martinez">
+</div>
+{% endblock %}
